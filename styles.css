@@ -56,11 +56,6 @@ header h3 {
   margin-top: -20px;
   text-shadow: 2px 2px 5px black;
 }
-main {
-  display: flex;
-  align-items: center;
-  color: blueviolet;
-}
 
 header button {
   padding: 10px 20px;
