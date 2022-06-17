@@ -5,8 +5,7 @@
 .navbar {
   border-bottom: 5px solid rgb(182, 24, 221);
   background-color: rgb(240, 193, 107);
-  height: 150px;
-}
+  }
 
 .nav-link {
   text-decoration: none;
@@ -25,4 +24,53 @@
 #logo {
   width: 120px;
   height: 120px;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  background-image: url("Images/smilepics.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  justify-content: flex-end;
+  align-items: center;
+  color: rgb(255, 254, 254);
+  width: 100vw;
+  height: 600px;
+  padding: 40px;
+  margin-top: 80px;
+ }
+
+header h1 {
+  display: flex;
+  font-family: "Sansita Swashed", sans-serif;
+  font-size: 100px;
+  margin-top: 30px;
+  text-align: center;
+  text-shadow: 2px 2px 5px black;
+}
+
+header h3 {
+  font-size: 40px;
+  text-align: center;
+  margin-top: -20px;
+  text-shadow: 2px 2px 5px black;
+}
+main {
+  display: flex;
+  align-items: center;
+  color: blueviolet;
+}
+
+header button {
+  padding: 10px 20px;
+  background-color: aliceblue;
+  color: #000000;
+  border: none;
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+  cursor: pointer;
+  border-radius: 8px;
+  border-style: outset;
+  box-shadow: 5px 5px 10px rgb(13, 13, 14);
 }
