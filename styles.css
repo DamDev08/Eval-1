@@ -1,6 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital@1&family=Sansita+Swashed:wght@300&display=swap");
 
+html {
+  scroll-behavior: smooth;
+}
 
 .navbar {
   border-bottom: 5px solid rgb(182, 24, 221);
@@ -70,3 +73,103 @@ header button {
   box-shadow: 5px 5px 10px rgb(13, 13, 14);
 }
 
+section {
+  display: grid;
+}
+
+.volunteers {
+  display: grid;
+  border: 2px solid black;
+  margin-top: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+.team {
+  display: grid;
+  border: 2px solid black;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+h3 {
+    justify-self: center;
+}
+
+.teamPics {
+  display: flex;
+  width: 100vw;
+}
+
+#teampics {
+  margin: auto;
+  width: 70vw;
+  height: auto;
+  justify-self: center;
+}
+
+.in-world {
+  display: grid;
+  border: 2px solid black;
+  margin-top: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+#misshum {
+  width: 100vw;
+  height: auto;
+}
+
+.partners {
+  display: grid;
+  border: 2px solid black;
+  margin-top: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+.partnersPics {
+  display: flex;
+  width: 60vw;
+  height: auto;
+  }
+
+  #enfmonde {
+    border: 2px solid black;
+    margin: auto;
+  }
+  
+  #unicef {
+    border: 2px solid black;
+    left: 300px;
+  }
+
+
+@media screen and (max-width: 975px) {
+
+  .partnersPics {
+    display: flex;
+    width: 60vw;
+    height: auto;
+  }
+      
+  #enfmonde {
+    width: 50vw;
+    height: auto;
+  }
+  
+  #unicef {
+    width: 30vw;
+    height: auto;
+  }
+}
