@@ -1,7 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital@1&family=Sansita+Swashed:wght@300&display=swap");
+
+
+.navbar {
+  border-bottom: 5px solid rgb(182, 24, 221);
+  background-color: rgb(240, 193, 107);
+  height: 150px;
+}
+
 .nav-link {
-  color: aqua;
+  text-decoration: none;
+  color: blue;
+  margin-right: 10px;
+  border-bottom: 1px solid blue;
+  padding-bottom: 5px;
 }
 
 .navbar-title {
   color: blue;
+  font-family: "Sansita Swashed", sans-serif;
+  font-size: 60px;
 }
+
