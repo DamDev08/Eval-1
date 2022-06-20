@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital@1&family=Sansita+Swashed:wght@300&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
+
+body{
+  display: flex;
+  width: 90vw;
+  background-image: url("Images/SourireALaVie2904131148Gjpg_5c4989e593cbc.jpg");
+  background-size: cover;
+  justify-content: center;
+  margin: 2em auto;
+}
+
+h2 {
+  color: #fff;
+}
+
+h3 {
+  color: #fff;
+}
+
+.container {
+border-radius: 20px;
+display: grid;
+justify-items: center;
+grid-template-columns: 1fr 1fr 1fr;
+grid-template-rows: repeat(6, 1fr);
+row-gap: 5px;
+column-gap: 2px;
+grid-template-areas: 
+"tombola tombola tombola"
+"tombola tombola tombola"
+"tombola tombola tombola"
+"calendar calendar calendar"
+"calendar calendar calendar"
+"calendar calendar calendar"
+}
+
+.tombola {
+  width: 50vw;
+  background-color: rgba(255, 192, 203, 0.115);
+  grid-area: tombola;
+  padding: 10px;
+  align-items: center;
+  text-align: center;
+  border-radius: 20px;
+  margin-bottom: 250px;
+      }
+
+.calendar {
+  background-color: rgba(144, 238, 144, 0.115);
+  grid-area: calendar;
+  padding: 10px;
+  align-items: center;
+  text-align: center;
+  border-radius: 20px;
+  }
