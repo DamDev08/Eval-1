@@ -71,6 +71,7 @@ grid-template-areas:
     color: rgb(19, 11, 243);
     text-shadow: 2px 2px 2px #fff;
     margin-bottom: 25px;
+    text-decoration: underline;
 }
 
 .tombola p {
@@ -117,6 +118,12 @@ grid-template-areas:
   text-shadow: 2px 2px 2px #000;
   font-size: larger;
   font-weight: bold;
+}
+
+#cal {
+  color: crimson;
+  font-weight: bold;
+  font-style: italic;
 }
 
 
