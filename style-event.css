@@ -5,21 +5,40 @@ html {
   scroll-behavior: smooth;
 }
 
-body{
+
+.navbar {
+  border-bottom: 5px solid rgb(182, 24, 221);
+  background-color: rgb(240, 193, 107);
+  }
+
+.nav-link {
+  text-decoration: none;
+  color: blue;
+  margin-right: 10px;
+  border-bottom: 1px solid blue;
+  padding-bottom: 5px;
+}
+
+.navbar-title {
+  color: blue;
+  font-family: "Sansita Swashed", sans-serif;
+  font-size: 60px;
+}
+
+#logo {
+  width: 120px;
+  height: 120px;
+}
+
+main {
   display: flex;
-  width: 90vw;
-  background-image: url("Images/SourireALaVie2904131148Gjpg_5c4989e593cbc.jpg");
+  width: 100vw;
+  background-image: url("Images/concept-de-groupe-de-bonheur-de-diversité-d-enfants-d-enfants-57341038.jpg");
   background-size: cover;
+  background-repeat: no-repeat;
   justify-content: center;
-  margin: 2em auto;
-}
-
-h2 {
-  color: #fff;
-}
-
-h3 {
-  color: #fff;
+  align-items: center;
+  
 }
 
 .container {
@@ -28,8 +47,7 @@ display: grid;
 justify-items: center;
 grid-template-columns: 1fr 1fr 1fr;
 grid-template-rows: repeat(6, 1fr);
-row-gap: 5px;
-column-gap: 2px;
+
 grid-template-areas: 
 "tombola tombola tombola"
 "tombola tombola tombola"
@@ -37,24 +55,78 @@ grid-template-areas:
 "calendar calendar calendar"
 "calendar calendar calendar"
 "calendar calendar calendar"
+  }
+
+.tombola {
+  grid-area: tombola;
+  background-color: rgba(0, 255, 255, 0.468);
+  align-items: center;
+  text-align: center;
+  border-radius: 20px;
+  margin-top: 100px;
+  margin-bottom: 300px;
+  }
+
+.tombola h2 {
+    color: rgb(19, 11, 243);
+    text-shadow: 2px 2px 2px #fff;
+    margin-bottom: 25px;
+}
+
+.tombola p {
+  color: rgb(19, 11, 243);
+  text-shadow: 2px 2px 2px #fff;
+}
+
+.calendar {
+  grid-area: calendar;
+  background-color: rgba(0, 255, 255, 0.468);
+  align-items: center;
+  text-align: center;
+  border-radius: 20px;
+  margin-bottom: 100px;
+  }
+
+.calendar h2 {
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-bottom: 25px;
+  border-radius: 5px;
+  color: #fff;
+  background-color: rgb(153, 84, 218);
+  box-shadow: 0 0 0 0 blueviolet;
+  animation: pulse 1.3s infinite;
+}
+  
+  @keyframes pulse {
+    to{
+      box-shadow: 0 0 0 15px rgba(138,43,226,0.01)
+  }
+  }
+
+  .calendar h3 {
+    color: #fff;
+    text-shadow: 2.5px 2.5px 2.5px #000;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+  }
+
+.calendar p {
+  color: #fff;
+  text-shadow: 2px 2px 2px #000;
+  font-size: larger;
+  font-weight: bold;
+}
+
+
+@media screen and (max-width: 625px) {
+  main {
+    background-image: none;
+    background-color: bisque;
 }
 
 .tombola {
-  width: 50vw;
-  background-color: rgba(255, 192, 203, 0.115);
-  grid-area: tombola;
-  padding: 10px;
-  align-items: center;
-  text-align: center;
-  border-radius: 20px;
-  margin-bottom: 250px;
-      }
-
-.calendar {
-  background-color: rgba(144, 238, 144, 0.115);
-  grid-area: calendar;
-  padding: 10px;
-  align-items: center;
-  text-align: center;
-  border-radius: 20px;
-  }
+  margin-bottom: 150px;
+}
+}
