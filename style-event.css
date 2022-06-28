@@ -68,6 +68,7 @@ grid-template-areas:
 .tombola h2 {
     color: rgb(19, 11, 243);
     text-shadow: 2px 2px 2px #fff;
+    margin-top: 35px;
     margin-bottom: 25px;
     text-decoration: underline;
 }
@@ -107,7 +108,7 @@ grid-template-areas:
   text-transform: uppercase;
   font-weight: bold;
   text-align: center;
-  margin-bottom: 60px;
+  margin: 0px 5px 60px 5px;
   }
 
 .calendar p {
@@ -132,6 +133,21 @@ grid-template-areas:
   margin-bottom: 100px;
 }
 
+.tarifsEtResa p {
+  color: #000;
+  text-shadow: 2px 2px 2px #fff;
+  font-size: larger;
+  font-weight: bold;
+}
+
+.resa p {
+  color: rgba(247, 145, 145, 0.836);
+  text-shadow: 2px 2px 2px #000;
+  font-size: larger;
+  font-weight: bold;
+  margin-right: 5px;
+  margin-left: 5px;
+}
 .resa button {
   padding: 10px 20px;
   background-color: rgba(247, 145, 145, 0.836);
@@ -143,6 +159,15 @@ grid-template-areas:
   border-radius: 8px;
   border-style: outset;
   box-shadow: 5px 5px 10px rgb(13, 13, 14);
+  margin-bottom: 10px;
+}
+
+.tarifsEtResa h3 {
+  color: #fff;
+  text-shadow: 2.5px 2.5px 2.5px #000;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
   margin-bottom: 10px;
 }
 
