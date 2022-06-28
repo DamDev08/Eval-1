@@ -154,6 +154,32 @@ h3 {
     left: 300px;
   }
 
+footer {
+  display: block;
+  text-align: center;
+  align-items: center;
+  background-color: lightblue;
+  width: auto;
+  height: auto;
+}
+
+footer h2 {
+  font-family: "Sansita Swashed", sans-serif;
+  text-decoration: underline;
+  padding-top: 30px;
+  margin-bottom: 15px;
+}
+
+footer p {
+  font-family: "Montserrat", sans-serif;
+  color: blueviolet;
+  padding-bottom: 15px;
+}
+
+footer aside {
+  padding-bottom: 15px;
+  font-family: "Montserrat", sans-serif;
+}
 
 @media screen and (max-width: 975px) {
 
