@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Formulaires</title>
+  </head>
+  <body>
+    <form method="post">
+      <!-- "method" est obligatoire, peut être "post" ou "get". "Action" ramène au code de programmation qui traitera l'info -->
+      <p>Nom : <input name="username" placeholder="Nom" /></p>
+      <!-- toujours nommer sa balise input / "placeholder" permet d'afficher un élément d'info dans la case à remplir-->
+      <p>
+        <label for="prenom">Prénom</label>
+        <input id="prenom" name="username" placeholder="Prénom" />
+      </p>
+      <!-- le label permet une utilisation de la tabulation pour passer d'un élément à un autre. Il aura toujours besoin d'un "id" pour l'identifier-->
+      <p>
+        <input
+          type="text"
+          name="formfield"
+          placeholder="Tapez votre réponse ici..."
+        />
+      </p>
+      <p>
+        Mot de passe
+        <input
+          type="password"
+          name="formfield"
+          placeholder="Tapez votre mot de passe ici..."
+        />
+      </p>
+      <p>To do list <input type="checkbox" name="formfield" /></p>
+      <p>
+        Faire un choix <input type="radio" name="choice" />Oui
+        <input type="radio" name="choice" />Non
+      </p>
+      <p>
+        Choisir une couleur
+        <input type="color" name="formfield" value="#FFFFFF" />
+      </p>
+      <!--Permet d'afficher un panel couleur. "value" permet de f=définir une couleur par défaut (ici blanc)-->
+      <p><input type="date" name="formfield" /></p>
+      <p><input type="datetime-local" name="formfield" /></p>
+      <p><input type="time" name="formfield" /></p>
+      <p>
+        Mail
+        <input
+          type="email"
+          name="formfield"
+          placeholder="Tapez votre adresse mail ici"
+        />
+      </p>
+      <p>
+        Téléphone
+        <input
+          type="tel"
+          name="formfield"
+          placeholder="Tapez votre numéro de téléphone ici"
+        />
+      </p>
+      <p>
+        Recherche
+        <input type="search" name="formfield" placeholder="recherche" />
+      </p>
+      <!--utile pour faire un moteur de recherche-->
+      <p>
+        0<input type="Range" name="formfield" min="0" max="100" step="5" />100
+      </p>
+      <p>
+        <input
+          type="number"
+          name="formfield"
+          value="50"
+          min="0"
+          max="100"
+          step="1"
+        />
+      </p>
+      <p><input type="submit" name="valid_form" value="Envoyer" /></p>
+      <!--créé un bouton de validation ou d'action Se rapportera à l'action définie en balise <form>-->
+      <!--Il existe aussi un bouton qui permet d'effacer les valeurs indiquées-->
+      <p><input type="reset" value="effacer" /></p>
+      <!--la balise fieldset permet de créer des section de formulaire et de séparer des éléments. ! il peut-être identifier avec un id pour le lier à un formulaire en particulier-->
+      <fieldset>
+        <legend>Autre personne</legend>
+        <p>Nom : <input type="text" name="username" /></p>
+        <p><input type="submit" name="valid_form" value="Envoyer" /></p>
+      </fieldset>
+      <!--Il est possible de créer des champs de saisie permettant d'intégrer plus de charactères, voire du texte avec la balise <textearea>-->
+      <p>
+        Commentaire<br /><textarea
+          name="article_content"
+          rows="10"
+          cols="65"
+          minlength="10"
+          maxlength="150"
+          wrap="soft"
+          placeholder="Votre commentaire ici..."
+        ></textarea>
+      </p>
+      <!--rowls = nombre de lignes / cols = nombre de colonnes pré-affichées / min et maxlenght = nombre de charactères min et max / 
+        wrap = permet de définir le comportement de l'ajustement du champs par rapport au text (quand le texte arrive en bout de ligne)-->
+      <fieldset>
+        <legend>OPERATING SYSTEM</legend>
+        <!--menus déroulants (choix fixes)-->
+        <p>Sélectionnez votre OS</p>
+        <select name="choix d'OS" size="2">
+          <option value="win">Windows</option>
+          <option value="mac">MacOS</option>
+          <option value="linux">GNU/Linux</option>
+          <!--L'attribut value utile pour le langage back end web en matière du traitement des données par le langage de prog
+            L'attribut "size" permet un affichage de plusieurs lignes du menu-->
+        </select>
+      </fieldset>
+      <!--Menus déroulants avec groupes et sous-groupes-->
+      <fieldset>
+        <legend>GAMES</legend>
+        <p>Sélectionnez un jeu</p>
+        <select name="choixjeu">
+          <!--L'ajout de l'attirbut "multiple" permet selection de plusieurs réponses en même temps-->
+          <optgroup label="RPG">
+            <option value="FF">Final fantasy</option>
+            <option value="TLOZ">The legend of Zelda</option>
+          </optgroup>
+          <optgroup label="FPS">
+            <option value="CS:GO">CS:GO</option>
+            <option value="Fortnite">Fortnite</option>
+          </optgroup>
+        </select>
+        <br /><input type="submit" name="valid_form" value="valider" />
+      </fieldset>
+      <!--Menu dérouant avec option d'ajout personnalisé-->
+      <fieldset>
+        <legend>CONSOLE</legend>
+        <p>Sélectionnez une console</p>
+        <input list="choixConsole" />
+        <datalist id="choixConsole">
+          <!--l'id doit être celui du champs de l'attribut "list" de référence-->
+          <option value="PS4">Playstation 4</option>
+          <option value="PS5">Playstation 5</option>
+          <option value="XBOX-SX">Xbox series X</option>
+          <option value="XBOX-SS">Xbos series S</option>
+        </datalist>
+        <!--cette fonction permet de, soit sélectionner une des options proposées, soit de rajouter soi-même une option-->
+        <input type="submit" name="valid_form" value="valider" />
+      </fieldset>
+    </form>
+  </body>
+  <!--vidéos connexes : https://youtu.be/L6ld1B2Q98Y  /  https://youtu.be/zmJ2rHL5UfM  -->
+</html>
