@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital@1&family=Sansita+Swashed:wght@300&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
+
+.navbar {
+  border-bottom: 5px solid rgb(182, 24, 221);
+  background-color: rgb(240, 193, 107);
+  }
+
+.nav-link {
+  text-decoration: none;
+  color: blue;
+  margin-right: 10px;
+  border-bottom: 1px solid blue;
+  padding-bottom: 5px;
+}
+
+.navbar-title {
+  color: blue;
+  font-family: "Sansita Swashed", sans-serif;
+  font-size: 60px;
+}
+
+#logo {
+  width: 120px;
+  height: 120px;
+}
+
+.titre {
+  align-items: center;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+footer {
+  display: block;
+  text-align: center;
+  align-items: center;
+  background-color: lightblue;
+  width: auto;
+  height: auto;
+}
+
+footer h2 {
+  font-family: "Sansita Swashed", sans-serif;
+  text-decoration: underline;
+  padding-top: 30px;
+  margin-bottom: 15px;
+}
+
+footer p {
+  font-family: "Montserrat", sans-serif;
+  color: blueviolet;
+  padding-bottom: 15px;
+}
+
+footer aside {
+  padding-bottom: 15px;
+  font-family: "Montserrat", sans-serif;
+}
