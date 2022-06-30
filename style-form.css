@@ -29,12 +29,6 @@ html {
   height: 120px;
 }
 
-.titre {
-  align-items: center;
-  margin-top: 100px;
-  margin-bottom: 100px;
-}
-
 footer {
   display: block;
   text-align: center;
@@ -61,3 +55,4 @@ footer aside {
   padding-bottom: 15px;
   font-family: "Montserrat", sans-serif;
 }
+
