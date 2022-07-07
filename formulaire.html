@@ -3,121 +3,121 @@
 <!DOCTYPE html>
 <html lang="fr">
 
-  <head>
+<head>
 
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="bootstrap.min.css"/>
-  <link rel="stylesheet" type="text/css" href="styles.css" />
-  <title>Formulaire de réservation</title>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="bootstrap.min.css"/>
+<link rel="stylesheet" type="text/css" href="styles.css" />
+<title>Formulaire de réservation</title>
 
-  </head>
-  <body>
+</head>
+<body>
 
-    <nav class="navbar navbar-expand-lg">
-      <div class="container-fluid"> 
-        
-        <a class="navbar-brand" href="index.html">
-          <img id="logo" src="Images/monde-enfants.jpg" alt="logo">
-        </a>
-  
-        <h1 class="navbar-title">POUR LEUR SOURIRE</h1>
-  
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" href="#contact">Contactez-nous</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid"> 
+      
+      <a class="navbar-brand" href="index.html">
+        <img id="logo" src="Images/monde-enfants.jpg" alt="logo">
+      </a>
 
-    <div class="titre">
-      <h1 class="titre">FORMULAIRE DE RESERVATION</h1>
+      <h1 class="navbar-title">POUR LEUR SOURIRE</h1>
+
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contactez-nous</a>
+        </li>
+      </ul>
     </div>
+  </nav>
 
-    <form class="form" method="post">
-      
-      <p>Nom : <br />
-        <input name="username" placeholder="Nom" /></p>
-      <p>
-        <label for="prenom">Prénom :</label><br />
-        <input id="prenom" name="username" placeholder="Prénom" />
-      </p>
-      <p>
-        Nombre de places désirées : 
-        <p>
-          <input
-            type="number"
-            name="formfield"
-            value="0"
-            min="0"
-            max="100"
-            step="1"/>
-        </p>
-      </p>
-      <p>
-        Pensez-vous participer à la tombola ? <br />
-        <input type="radio" name="choice" />  Oui  -   
-        <input type="radio" name="choice" />  Non  -
-        <input type="radio" name="choice" />  Ne sait pas encore  -
-      </p>
-      
-      <p>
-        Date de concert choisie :
-        <input type="date" name="formfield" />
-      </p>
+  <div class="titre">
+    <h1 class="titre">FORMULAIRE DE RESERVATION</h1>
+  </div>
 
-      <p>
-        Votre adresse email : <br />
+  <form class="form" method="post">
+    
+    <p>Nom : <br />
+      <input name="username" placeholder="Nom" /></p>
+    <p>
+      <label for="prenom">Prénom :</label><br />
+      <input id="prenom" name="username" placeholder="Prénom" />
+    </p>
+    <p>
+      Nombre de places désirées : 
+    
         <input
-          type="email"
+          type="number"
           name="formfield"
-          placeholder="Votre adresse mail ici"/>
-      </p>
+          value="0"
+          min="0"
+          max="100"
+          step="1"/>
+    
+    </p>
+    <p>
+      Pensez-vous participer à la tombola ? <br />
+      <input type="radio" name="choice" />  Oui  -   
+      <input type="radio" name="choice" />  Non  -
+      <input type="radio" name="choice" />  Ne sait pas encore  -
+    </p>
+    
+    <p>
+      Date de concert choisie :
+      <input type="date" name="formfield" />
+    </p>
 
-      <p>
-        Votre numéro de téléphone : <br />
-        <input
-          type="tel"
-          name="formfield"
-          placeholder="Votre numéro ici"/>
-      </p>
-                
-      <p>
-        <input type="submit" name="valid_form" value="Envoyer" />    
-        <input type="reset" value="Effacer le formulaire" /> <br />
-        <p>Après validation, vous recevrez un email de confirmation de votre réservation.<br />
-        Pensez à vérifier que les données fournies sont exactes.<br />
-        En cas de doute ou d'annulation, cliquez sur "Effacer le formulaire".</p>
-      </p>
-      
-      <p class="com">
-        Commentaire : <br />
-        <textarea class="text"
-          name="article_content"
-          rows="05"
-          cols="65"
-          minlength="10"
-          maxlength="150"
-          wrap="soft"
-          placeholder="Votre commentaire ici..."></textarea>
-      </p>
-      
-    </form>
-       
-    <footer>
+    <p>
+      Votre adresse email : <br />
+      <input
+        type="email"
+        name="formfield"
+        placeholder="Votre adresse mail ici"/>
+    </p>
 
-      <div class="contact"></div>
-        <h2>CONTACT</h2>
-        <p id="contact">
-          Téléphone : +339555888333<br />
-           <a id="mailto" href="mailto:smileofchildren@solidarity.fr">
-              Em@il: smileofchildren@solidarity.fr</a>
-        </p>
-        <aside class="aside">Copyright My Own &copy; 2022</aside>
-        
-    </footer>
+    <p>
+      Votre numéro de téléphone : <br />
+      <input
+        type="tel"
+        name="formfield"
+        placeholder="Votre numéro ici"/>
+    </p>
+              
   
-  </body>
+      <input type="submit" name="valid_form" value="Envoyer" />    
+      <input type="reset" value="Effacer le formulaire" />
+      <p>Une fois votre formulaire envoyé , vous recevrez un email de confirmation de votre réservation.<br />
+      Pensez à vérifier que les données fournies sont exactes.<br />
+      En cas de doute ou d'annulation, cliquez sur "Effacer le formulaire".</p>
+    
+    
+    <p class="com">
+      Commentaire : <br />
+      <textarea class="text"
+        name="article_content"
+        rows="05"
+        cols="65"
+        minlength="10"
+        maxlength="150"
+        wrap="soft"
+        placeholder="Votre commentaire ici..."></textarea>
+    </p>
+    
+  </form>
+      
+  <footer>
+
+    <div class="contact"></div>
+      <h2>CONTACT</h2>
+      <p id="contact">
+        Téléphone : +339555888333<br />
+          <a id="mailto" href="mailto:smileofchildren@solidarity.fr">
+            Em@il: smileofchildren@solidarity.fr</a>
+      </p>
+      <aside class="aside">Copyright My Own &copy; 2022</aside>
+      
+  </footer>
+
+</body>
 </html>
