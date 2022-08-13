@@ -7,6 +7,17 @@ html {
 
 body {
   height: 100vh;
+
+  
+}
+
+form {
+  position: relative;
+
+  width  : 740px;
+  height : auto;
+  margin : 0 auto;
+
 }
 
 .navbar {
@@ -35,12 +46,13 @@ body {
 
 
 footer {
-  display: block;
+  display: flex;
+  flex-direction: column;
   text-align: center;
   align-items: center;
   background-color: rgb(240, 193, 107);
   width: auto;
-  height: auto;
+  height: 15em;
 }
 
 footer h2 {
