@@ -5,6 +5,10 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  height: 100vh;
+}
+
 
 .navbar {
   border-bottom: 5px solid rgb(182, 24, 221);
@@ -33,9 +37,7 @@ html {
 main {
   display: flex;
   width: 100vw;
-  background-image: url("Images/Groupe-d-enfants.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-color: white;
   justify-content: center;
   align-items: center;
   
@@ -46,7 +48,7 @@ border-radius: 20px;
 display: grid;
 justify-items: center;
 grid-template-columns: 1fr 1fr 1fr;
-grid-template-rows: repeat(4, 1fr);
+grid-template-rows:auto;
 
 grid-template-areas: 
 "tombola tombola tombola"
@@ -66,17 +68,19 @@ grid-template-areas:
   }
 
 .tombola h2 {
-    color: rgb(19, 11, 243);
-    text-shadow: 2px 2px 2px #fff;
-    margin-top: 35px;
-    margin-bottom: 25px;
-    text-decoration: underline;
+  color: #fff;
+  text-shadow: 2.5px 2.5px 2.5px #000;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 10px;
+  text-decoration: underline;
 }
 
 .tombola p {
   color: rgb(19, 11, 243);
   text-shadow: 2px 2px 2px #fff;
-}
+  }
 
 .calendar {
   grid-area: calendar;
@@ -85,13 +89,14 @@ grid-template-areas:
   text-align: center;
   border-radius: 20px;
   margin-bottom: 100px;
+  padding-bottom: 05px;
   }
 
 .calendar h2 {
   margin: 20px 50px 80px 50px;
   border-radius: 5px;
   color: #fff;
-  background-color: rgb(153, 84, 218);
+  background-color: rgba(153, 84, 218, 0.836);
   box-shadow: 0 0 0 0 blueviolet;
   animation: pulse 1.3s infinite;
 }
@@ -124,6 +129,12 @@ grid-template-areas:
   font-style: italic;
 }
 
+#resa {
+  color: crimson;
+  font-weight: bold;
+  font-style: italic;
+}
+
 .tarifsEtResa {
   grid-area: tarifsEtResa;
   background-color: rgba(0, 255, 255, 0.468);
@@ -141,8 +152,8 @@ grid-template-areas:
 }
 
 .resa p {
-  color: rgba(247, 145, 145, 0.836);
-  text-shadow: 2px 2px 2px #000;
+  color: rgba(153, 84, 218, 0.836);
+  text-shadow: 2px 2px 2px #fff;
   font-size: larger;
   font-weight: bold;
   margin-right: 5px;
@@ -150,8 +161,8 @@ grid-template-areas:
 }
 .resa button {
   padding: 10px 20px;
-  background-color: rgba(247, 145, 145, 0.836);
-  color: #000000;
+  background-color: rgba(153, 84, 218, 0.836);
+  color: #fff;
   border: none;
   font-size: 20px;
   font-family: "Montserrat", sans-serif;
@@ -169,16 +180,17 @@ grid-template-areas:
   font-weight: bold;
   text-align: center;
   margin-bottom: 10px;
+  text-decoration: underline;
 }
 
 footer {
   display: block;
   text-align: center;
   align-items: center;
-  background-color: lightblue;
+  background-color: rgb(240, 193, 107);
   width: auto;
   height: auto;
-  margin-top: 30px;
+  
 }
 
 footer h2 {
@@ -201,12 +213,14 @@ footer aside {
 
 
 @media screen and (max-width: 625px) {
+
   main {
     background-image: none;
-    background-color: bisque;
+    background-color: white;
 }
 
 .tombola {
   margin-bottom: 150px;
 }
+
 }

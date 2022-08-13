@@ -5,6 +5,10 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  height: 100vh;
+}
+
 .navbar {
   border-bottom: 5px solid rgb(182, 24, 221);
   background-color: rgb(240, 193, 107);
@@ -140,13 +144,16 @@ h3 {
   #unicef {
     border: 2px solid black;
     left: 300px;
+    width: 250px;
+    height: 300px;
+    margin: auto;
   }
 
 footer {
   display: block;
   text-align: center;
   align-items: center;
-  background-color: lightblue;
+  background-color: rgb(240, 193, 107);
   width: auto;
   height: auto;
 }

@@ -5,6 +5,10 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  height: 100vh;
+}
+
 .navbar {
   border-bottom: 5px solid rgb(182, 24, 221);
   background-color: rgb(240, 193, 107);
@@ -29,11 +33,12 @@ html {
   height: 120px;
 }
 
+
 footer {
   display: block;
   text-align: center;
   align-items: center;
-  background-color: lightblue;
+  background-color: rgb(240, 193, 107);
   width: auto;
   height: auto;
 }
